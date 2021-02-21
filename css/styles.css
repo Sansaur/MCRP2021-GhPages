@@ -1,0 +1,94 @@
+/**
+* GLOBAL
+**/
+body {
+}
+
+/**
+* LIST
+**/
+.main-list {
+  color: #62a746;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  padding: 15px;
+  overflow: auto;
+}
+.main-list a {
+  color: #af4514;
+  -webkit-text-stroke-color: black;
+}
+.main-list a:hover {
+  text-decoration: none;
+  color: #ffffbf;
+}
+.main-list hr {
+  border-color: #af4514;
+}
+
+/**
+* Inner pages
+**/
+.inner-main-title {
+  font-size: 5rem;
+}
+.inner-h2 {
+  font-size: 4rem;
+}
+.inner-h3 {
+  font-size: 3rem;
+}
+.bigger-font {
+  font-size: 1.7rem;
+}
+.inner-button {
+  width: 100%;
+  height: 100%;
+  min-height: 84px;
+  border: 1px solid #645452;
+  background-color: #aeb1a3;
+}
+.inner-button:hover {
+  background-color: #645452;
+}
+/**
+*
+**/
+
+.book-back {
+  background-image: url(../assets/img/back2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 10px #000000;
+  z-index: 1000;
+  background-color: rgb(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+}
+.page-back {
+  background-image: url(../assets/img/back1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-blend-mode: multiply;
+}
+
+/**
+* FONTS
+**/
+@font-face {
+  font-family: "FantaisieArtistique";
+  src: local("FantaisieArtistique"),
+    url(../assets/fonts/FantaisieArtistique.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "MedievalSharp";
+  src: local("MedievalSharp"),
+    url(../assets/fonts/MedievalSharp.ttf) format("truetype");
+}
+.font-fantasie {
+  font-family: "FantaisieArtistique";
+}
+.font-medieval {
+  font-family: "FantaisieArtistique";
+}

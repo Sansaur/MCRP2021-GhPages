@@ -1,0 +1,105 @@
+<div class="overflow-hidden">
+    <h1 class="inner-main-title font-fantasie">PVP rules</h1>
+    <div class="font-medieval bigger-font pl-3">
+        <p class="inner-h2">Always-active rules</p>
+        <ul class="pl-5 list-unstyled">
+            <li>1 - Any PVP situation can be screenshot and brought for admin supervision to see if rules were broken</li>
+            <li>2 - All PVP situations require escalation beforehand</li>
+            <li class="pl-5">2.1 - Escalation refers to the act of giving the player a heads up of the intent to PVP</li>
+            <li class="pl-5">2.2 - Even further, a "signal" in the form of a roleplay post indicating the start of the attack is preferable before starting to swing ingame</li>
+            <li>3 - Do not Godmode (Referring to the act of performing impossible feats ot describing events that happen in your favor without taking into account other players)</li>
+            <li>4 - Do not Powerplay (Referring to the act of forcing another player to commit roleplay actions with your own posts)</li>
+            <li>5 - Do not Metagame (Referring to the act of using information from outside the game to alter your actions)</li>
+            <li>6 - Do not Revenge Kill (Referring to the act of pursuing whoever killed you immediatly after respawning)</li>
+            <li class="pl-5">6.1 - If the killer belongs to a faction hostile to you, you cannot enter that faction's territories either</li>
+            <li class="pl-5">6.2 - The span of time considered "immediately after getting killed" is 10 minutes</li>
+            <li>7 - Do not destroy anything built by other players unless they (And everyone involved in it's construction) consent in it's destruction</li>
+            <li>8 - Do not use the following tactics when fighting neither players nor NPCs: </li>
+            <li class="pl-5">8.1 - Do not block paths with blocks, or, even worse, bits</li>
+            <li class="pl-5">8.2 - Do not fight using buckets of liquid</li>
+            <li class="pl-5">8.3 - Do not break mobs' pathing</li>
+            <li class="pl-5">8.4 - Do not steal items from players' chests</li>
+            <li class="pl-5">8.5 - Do not destroy other players' property</li>
+            <li class="pl-5">8.6 - Do not gimp other players</li>
+        </ul>
+        <p class="inner-h2">PVP Scenarios</p>
+        <p>Player-focused</p>
+        <div class="row">
+            <div class="col-lg-2">
+                <button data-page="public/pvp-pages/duels.html" class="inner-button pvp-page">Duels</button>
+            </div>
+            <div class="col-lg-2">
+                <button data-page="public/pvp-pages/pickpocketing.html" class="inner-button pvp-page">Pickpocketing</button>
+            </div>
+            <div class="col-lg-2">
+                <button data-page="public/pvp-pages/robberies.html" class="inner-button pvp-page">Robberies</button>
+            </div>
+            <div class="col-lg-2">
+                <button data-page="public/pvp-pages/player-kills.html" class="inner-button pvp-page">Player-kills</button>
+            </div>
+            <div class="col-lg-2">
+                <button data-page="public/pvp-pages/kidnapping.html" class="inner-button pvp-page">Kidnappings</button>
+            </div>
+            <div class="col-lg-2">
+                <button data-page="public/pvp-pages/premeditated-aggression.html" class="inner-button pvp-page">Premeditated aggressions</button>
+            </div>
+        </div>
+        <p>Faction-focused</p>
+        <div class="row">
+            <div class="col-lg-2">
+                <button class="inner-button pvp-page">Friendlies</button>
+            </div>
+            <div class="col-lg-2">
+                <button class="inner-button pvp-page">Brawls</button>
+            </div>
+            <div class="col-lg-2">
+                <button class="inner-button pvp-page">Hostility</button>
+            </div>
+            <div class="col-lg-2">
+                <button class="inner-button pvp-page">Espionage</button>
+            </div>
+        </div>
+        <p>Faction v Faction</p>
+        <div class="row">
+            <div class="col-lg-2">
+                <button class="inner-button pvp-page">Heists</button>
+            </div>
+            <div class="col-lg-2">
+                <button class="inner-button pvp-page">Pillages</button>
+            </div>
+            <div class="col-lg-2">
+                <button class="inner-button pvp-page">Warfare</button>
+            </div>
+            <div class="col-lg-2">
+                <button class="inner-button pvp-page">Sieges</button>
+            </div>
+        </div>
+        <div id="load-target-pvp">
+
+        </div>
+        <p class="inner-h2">How to deal with Premeditated aggression?</p>
+        <div class="row">
+            <div class="col-lg-6">
+                <p style="color:#005a07;" class="inner-h3">Restricted</p>
+                <p>
+                    You can pick either being fully immune to premeditated aggressions and never being a target of them. 
+                    Or you can provide a whitelist of which actions you allow aggressors to perform onto you
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <p style="color:#961e1e;" class="inner-h3">Wild</p>
+                <p>
+                    You accept any consequences if you fall victim to premeditated aggressions and the aggressors may roleplay anything they wish
+                    even if later you still keep your rights to make it a canon event onto your character or not
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    
+    $('.pvp-page').on('click',function(){
+        $('#load-target-pvp').load($(this).data('page'));
+    })
+</script>
+
