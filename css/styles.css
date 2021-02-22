@@ -51,6 +51,23 @@ body {
 .inner-button:hover {
   background-color: #645452;
 }
+.character-sheet .bordered-container {
+  border: 5px solid #645452;
+}
+.character-sheet .rounded-border-container {
+  border: 5px solid #645452;
+  padding: 15px;
+  border-radius: 30px;
+}
+.character-sheet .bordered-container img {
+  width: 100%;
+}
+.restricted-color {
+  color: #005a07;
+}
+.wild-color {
+  color: #961e1e;
+}
 /**
 *
 **/
