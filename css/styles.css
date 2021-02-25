@@ -41,6 +41,9 @@ body {
 .bigger-font {
   font-size: 1.7rem;
 }
+.smaller-font {
+  font-size: 1.2rem;
+}
 .inner-button {
   width: 100%;
   height: 100%;
@@ -53,6 +56,9 @@ body {
 }
 .character-sheet .bordered-container {
   border: 5px solid #645452;
+}
+.character-sheet .bordered-container-2 {
+  border: 5px solid #9416c5;
 }
 .character-sheet .rounded-border-container {
   border: 5px solid #645452;
@@ -67,6 +73,37 @@ body {
 }
 .wild-color {
   color: #961e1e;
+}
+.hard-flex-column {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.no-link {
+  color: #222;
+}
+.no-link:hover {
+  text-decoration-color: #222;
+}
+.max-img-48 {
+  max-width: 25%;
+  min-width: 48px;
+}
+.buyable-sheet .min-height {
+  min-height: 75%;
+}
+.buyable-sheet .bordered-container {
+  border: 5px solid #645452;
+}
+.buyable-sheet .bordered-container-2 {
+  border: 5px solid #9416c5;
+}
+.buyable-sheet .rounded-border-container {
+  border: 5px solid #645452;
+  padding: 15px;
+  border-radius: 30px;
+}
+.buyable-sheet .bordered-container img {
+  width: 100%;
 }
 /**
 *
@@ -90,6 +127,14 @@ body {
 }
 
 /**
+* Magic texts
+**/
+
+.dark {
+  color: rgb(65, 7, 47);
+}
+
+/**
 * FONTS
 **/
 @font-face {
@@ -106,6 +151,6 @@ body {
 .font-fantasie {
   font-family: "FantaisieArtistique";
 }
-.font-medieval {
-  font-family: "FantaisieArtistique";
+.font-serif {
+  font-family: "Times New Roman", Times, serif;
 }

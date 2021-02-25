@@ -1,0 +1,37 @@
+<div class="overflow-hidden">
+    <h1 class="inner-main-title font-fantasie">Currently available RP shops</h1>
+    <div class="font-serif bigger-font pl-3">
+        <p>To acquire RP you can do the following, without being spammed (Remember that this isn't controlled by any kind of script as of now, so forgive human error):</p>
+        <ul class="pl-5 list-unstyled">
+            <li>Posting public roleplays with other players (+5 as base, bonuses can be applied)</li>
+            <li>Activity (+5 per day)</li>
+            <li>Commendations by other players (+2 per player, once)</li>
+            <li>Posting/Being part of faction-related or lore-related roleplays (+5 as base, bonuses can be applied)</li>
+            <li>Organising player events [Parties, competitions, field trips, etc...] (+10 as base, bonuses can be applied)</li>
+            <li>Posting / Being part of Faction-Faction interactions (+20 per RP / +5 if you're faction leader)</li>
+        </ul>
+        <p><b>Acquiring NPCs:</b> Before you can buy an NPC to live in your base, you must build them a suitable living space</p>
+        <p><b>Acquiring Special Buildings:</b> These improve the NPCs, your PVP abilities, or your progression</p>
+        <p><b>Class/Faction powers:</b> All of these require admin interventions, so understand if admins aren't available</p>
+        <div class="row">
+            <div class="col-lg-2">
+                <button data-page="public/shops/npcs.html" class="inner-button page">Acquiring NPCs</button>
+            </div>
+            <div class="col-lg-2">
+                <button data-page="public/shops/buildings.html" class="inner-button page">Acquiring Buildings</button>
+            </div>
+            <div class="col-lg-2">
+                <button data-page="public/shops/powers.html" class="inner-button page">Class/Faction powers</button>
+            </div>
+        </div>
+        <div id="load-target">
+
+        </div>
+    </div>
+</div>
+<script>
+    $('.page').on('click',function(){
+        $('#load-target').load($(this).data('page'));
+    })
+</script>
+
