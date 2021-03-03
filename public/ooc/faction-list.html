@@ -1,0 +1,34 @@
+<div id="list" class="overflow-hidden">
+    <h1 class="inner-main-title font-fantasie">Faction list</h1>
+    <div class="font-serif bigger-font pl-3">
+        <div class="col-lg-3 character-sheet">
+            <a href="#!" class="clickable-sheet" data-character="public/factions/testito.html">
+                <div class="d-flex flex-row bordered-container brown-background-container">
+                    <img class="max-48" src="assets/img/test.png">
+                    <div class="no-link flex-grow-1 text-center">Testito</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<div id="character" class="overflow-hidden">
+    <a href="#!" class="no-link inner-main-title font-fantasie back">
+        <i class="fa fa-arrow-left "></i> Back
+    </a>
+    <div class="font-serif bigger-font pl-3" id="space">
+
+    </div>
+</div>
+<script>
+    $('#character').hide();
+    $('.clickable-sheet').click(function(){
+        $('#list').hide();
+        $('#character').show();
+        $('#space').load($(this).data('character'));
+    })
+    $('.back').click(function(){
+        $('#list').show();
+        $('#character').hide();
+        $('#space').load($(this).data('character'));
+    })
+</script>

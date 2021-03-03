@@ -173,3 +173,15 @@ body {
   border: 3px solid #645452;
   height: fit-content;
 }
+
+/*
+* FACTIONS
+*/
+
+.max-48 {
+  max-width: 48px;
+  max-height: 48px;
+}
+.brown-background-container {
+  background-color: #9c8683;
+}
