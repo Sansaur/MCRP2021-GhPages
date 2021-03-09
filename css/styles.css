@@ -148,6 +148,15 @@ body {
 .nature {
   color: rgb(7, 65, 10);
 }
+.electric {
+  color: rgb(7, 51, 65);
+}
+.healer {
+  color: rgb(64, 65, 7);
+}
+.sorcerer {
+  color: rgb(27, 121, 39);
+}
 
 /**
 * FONTS
