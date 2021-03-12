@@ -1,12 +1,20 @@
 <div class="font-serif row character-sheet">
+    <div class="col-lg-10 offset-lg-1 my-1 d-flex flex-row">
+        <div class="col-lg-2 offset-lg-1 bordered-container brown-background-container">
+            <a href="#!" class="audio-button no-link" data-music="assets/mp3/aristocrats1.mp3">Theme 1</a>
+        </div>
+        <div class="col-lg-2 offset-lg-1 bordered-container brown-background-container">
+            <a href="#!" class="audio-button no-link" data-music="assets/mp3/aristocrats2.mp3">Theme 2</a>
+        </div>
+    </div>
     <div class="col-lg-10 offset-lg-1 d-flex flex-row bordered-container brown-background-container">
         <img class="max-48 m-auto" src="assets/img/faction_symbols/aristocrats.png">
-        <h1 class="inner-main-title font-fantasie">Aristocrats</h1>
+        <h1 class="inner-main-title font-fantasie">Dominis Opes</h1>
         <img class="max-48 m-auto" src="assets/img/faction_symbols/aristocrats.png">
     </div>
     <div class="col-lg-10 offset-lg-1 my-1 d-flex flex-column bordered-container brown-background-container">
-        <p><b>Leader:</b> ??? (???)</p>
-        <p><b>Coordinates:</b> ??? (???)</p>
+        <p><b>Leader:</b> Yisus (Yisus)</p>
+        <p><b>Coordinates:</b> Roofed forest (???)</p>
         <p><b>Members:</b></p>
         <ul>
             <li>Fox (???)</li>
@@ -25,4 +33,17 @@
     <div class="col-lg-10 offset-lg-1 my-1 d-flex flex-row bordered-container brown-background-container">
         <p><i>WIP</i></p>
     </div>
+    <audio id="audio" style="display:none;">
+        <source id="audiosource" src="" type="audio/mpeg">
+    </audio>
+    <script>
+        $('.audio-button').on('click', function(){
+            if(last_audio != undefined){
+                last_audio.pause();
+            }
+            last_audio = new Audio($(this).data('music'));
+            last_audio.play();
+            $('#floatpause').css({'display':'block'});
+        })
+    </script>
 </div>

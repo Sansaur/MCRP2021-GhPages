@@ -1,29 +1,59 @@
 <div class="font-serif row character-sheet">
+    <div class="col-lg-10 offset-lg-1 my-1 d-flex flex-row">
+        <div class="col-lg-2 offset-lg-1 bordered-container brown-background-container">
+            <a href="#!" class="audio-button no-link" data-music="assets/mp3/wizards1.mp3">Theme 1</a>
+        </div>
+        <div class="col-lg-2 offset-lg-1 bordered-container brown-background-container">
+            <a href="#!" class="audio-button no-link" data-music="assets/mp3/wizards2.mp3">Theme 2</a>
+        </div>
+    </div>
     <div class="col-lg-10 offset-lg-1 d-flex flex-row bordered-container brown-background-container">
         <img class="max-48 m-auto" src="assets/img/faction_symbols/wizards.png">
         <h1 class="inner-main-title font-fantasie">Wizard College</h1>
         <img class="max-48 m-auto" src="assets/img/faction_symbols/wizards.png">
     </div>
     <div class="col-lg-10 offset-lg-1 my-1 d-flex flex-column bordered-container brown-background-container">
-        <p><b>Leader:</b> ??? (???)</p>
+        <p><b>Leader:</b> Luka (Kaldiriam)</p>
         <p><b>Coordinates:</b> 73 68 -1464 (Snowy coniferous forest)</p>
         <p><b>Members:</b></p>
         <ul>
-            <li>Gatzumara (???)</li>
+            <li>Gatzumara (Gatzumara)</li>
             <li>Kodikool (Kodi)</li>
-            <li>Xenorosth (Kodi)</li>
+            <li>Xenorosth (???)</li>
             <li>Dregonard (Dregonard Slytha)</li>
             <li>Luka (Kairidiam)</li>
         </ul>
-        <p><b>Purpose:</b> WIP</p>
+        <p><b>Purpose:</b> Our objective now is to take care of one of the last feral dragons and to gather all the magic again in a new library</p>
         <p><b>Rules to join:</b></p>
         <ol>
+            <li>·Don't point your wands at others classmate.</li>
+            <li>·Don't run down the hallways with your wand out.</li>
+            <li>·Combustion or smoke magic is prohibited in the library.</li>
+            <li>·Try to wear your wizard clothes (if you have one) at school.</li>
+            <li>·Do not steal magic material from others.</li>
+            <li>·Return the public tools after using them.</li>
+            <li>·Religions and their worship are allowed as long as they do not intervene or disturb other members.</li>
+            <li>·Don't polymorph the dragon to try to eat it.</li>
         </ol>
         <p><b>Standing with factions:</b></p>
         <ol>
+            WIP
         </ol>
     </div>
     <div class="col-lg-10 offset-lg-1 my-1 d-flex flex-row bordered-container brown-background-container">
-        <p><i>WIP</i></p>
+        <p><i>After the epic battle where Exilo was defeated and everything ended up in ruins, the Great Library of Magic, where a large amount of the world's magic was kepts, was destroyed. Our objective now is to take care of one of the last feral dragons and to gather all the magic again in a new library. This is how the a new School of Magicians was born.</i></p>
     </div>
+    <audio id="audio" style="display:none;">
+        <source id="audiosource" src="" type="audio/mpeg">
+    </audio>
+    <script>
+        $('.audio-button').on('click', function(){
+            if(last_audio != undefined){
+                last_audio.pause();
+            }
+            last_audio = new Audio($(this).data('music'));
+            last_audio.play();
+            $('#floatpause').css({'display':'block'});
+        })
+    </script>
 </div>

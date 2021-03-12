@@ -203,3 +203,13 @@ body {
 .brown-background-container {
   background-color: #9c8683;
 }
+#floatpause {
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+  z-index: 10000;
+  padding: 1em;
+  border: 3px solid #645452;
+  color: black;
+  font-size: 1.3em;
+}
