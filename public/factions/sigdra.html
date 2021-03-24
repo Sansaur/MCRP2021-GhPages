@@ -1,0 +1,57 @@
+<div class="font-serif row character-sheet">
+    <div class="col-lg-10 offset-lg-1 my-1 d-flex flex-row">
+        <div class="col-lg-2 offset-lg-1 bordered-container brown-background-container">
+            <a href="#!" class="audio-button no-link" data-music="assets/mp3/sigdra1.mp3">Theme 1</a>
+        </div>
+        <div class="col-lg-2 offset-lg-1 bordered-container brown-background-container">
+            <a href="#!" class="audio-button no-link" data-music="assets/mp3/sigdra2.mp3">Theme 2</a>
+        </div>
+    </div>
+    <div class="col-lg-10 offset-lg-1 d-flex flex-row bordered-container brown-background-container">
+        <img class="max-48 m-auto" src="assets/img/faction_symbols/sigdra.png">
+        <h1 class="inner-main-title font-fantasie">Sigdra's Shadows</h1>
+        <img class="max-48 m-auto" src="assets/img/faction_symbols/sigdra.png">
+    </div>
+    <div class="col-lg-10 offset-lg-1 my-1 d-flex flex-column bordered-container brown-background-container">
+        <p><b>Leader:</b> Cronos Acnos (Cronos)</p>
+        <p><b>Coordinates:</b> (1729, 105, -3004) - Maple Woods </p>
+        <p><b>Members:</b></p>
+        <ul>
+            <li>Cronos Acnos (Cronos)</li>
+        </ul>
+        <p><b>Purpose:</b><br><br>
+            Followers of the god Sigdra
+        </p>
+        <p><b>Rules to join:</b></p>
+        <ol>
+            <li>To be part of the shadows it is necessary to take an oath and a ritual of commendation to Sigdra.</li>
+            <li>The laws established by the sacred book will be followed.</li>
+            <li>The orders of the high pontiff will be obeyed</li>
+            <li>If you desert from the shadows you will be declared an enemy of Sigdra</li>
+            <li>Faith is above all</li>
+        </ol>
+        <p><b>Standing with factions:</b></p>
+        <ol>
+            <li></li>
+        </ol>
+    </div>
+    <div class="col-lg-10 offset-lg-1 my-1 d-flex flex-row bordered-container brown-background-container">
+        <p><i>Followers of the god Sigdra, a capricious and impious god, emerged from fear and misery after the fall of the dark lord. After the deaths during the war and the abuses of the opposing side, those lucky enough to stay alive were entrusted under the power of this ancient and powerful god, forbidden by some and unnameable by others.
+            The shadows, as that is what we who belong to this faction call ourselves, we defend the great and powerful name of our god Sigdra, who has called us to restore the dark power on earth and give us the power to rule over the other peoples, expanding its influence to every corner of the planet
+            We are characterized by our great faith above all else, and ambition, we do not allow the name of our god to be used in vain.
+            We are not only believers, we are also warriors, fighters, and defenders trained to go to war if necessary for defending Sigdra and under her dark blessing.</i></p>
+    </div>
+    <audio id="audio" style="display:none;">
+        <source id="audiosource" src="" type="audio/mpeg">
+    </audio>
+    <script>
+        $('.audio-button').on('click', function(){
+            if(last_audio != undefined){
+                last_audio.pause();
+            }
+            last_audio = new Audio($(this).data('music'));
+            last_audio.play();
+            $('#floatpause').css({'display':'block'});
+        })
+    </script>
+</div>
