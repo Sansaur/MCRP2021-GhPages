@@ -1,0 +1,56 @@
+<div class="overflow-hidden">
+    <h1 class="inner-main-title font-fantasie">Skins for Rogues</h1>
+    <div class="font-serif bigger-font pl-3">
+        <p>If you click the buttons you'll copy the path to where the skin is hosted, just paste it on your MPM screen and voila (Otherwise you can visit <a href="https://imgur.com/a/q2F6J0C">this page</a>)</p>
+        <p id="showmelater" style="display:none;">Copied!</p>
+        <div class="row">
+            <div class="col-lg-3 character-sheet">
+                <a href="#!" class="clickable-skin" data-path="https://i.imgur.com/xtBwp9u.png" data-name="Arctaisia">
+                    <div class="d-flex flex-row bordered-container brown-background-container">
+                        <div class="no-link flex-grow-1 text-center">Arctaisia</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 character-sheet">
+                <a href="#!" class="clickable-skin" data-path="https://i.imgur.com/t5l4wfx.png" data-name="Grit">
+                    <div class="d-flex flex-row bordered-container brown-background-container">
+                        <div class="no-link flex-grow-1 text-center">Grit</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 character-sheet">
+                <a href="#!" class="clickable-skin" data-path="https://i.imgur.com/oLqPPuh.png" data-name="Jinkinga">
+                    <div class="d-flex flex-row bordered-container brown-background-container">
+                        <div class="no-link flex-grow-1 text-center">Jinkinga</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<input type="text" value="Hello World" style="display:none;" id="myInput">
+<script>
+    $(".clickable-skin").on('click', function(){
+        copythis($(this).data('path'),$(this).data('name'))
+    });
+    function copythis(t,n) {
+        /* Get the text field */
+        $('#myInput').show();
+        var copyText = document.getElementById("myInput");
+        copyText.value = t;
+
+        /* Select the text field */
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+        $('#myInput').hide();
+
+        /* Alert the copied text */
+        // alert("Copied the text: " + copyText.value);
+
+        $('#showmelater').html("Copied the path ("+t+") to the skin ("+n+")")
+        $('#showmelater').show();
+    }
+</script>

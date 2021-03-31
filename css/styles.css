@@ -203,6 +203,9 @@ body {
 .brown-background-container {
   background-color: #9c8683;
 }
+.gray-background-container {
+  background-color: rgb(87, 87, 87);
+}
 #floatpause {
   position: fixed;
   bottom: 5px;
